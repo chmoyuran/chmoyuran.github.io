@@ -211,7 +211,7 @@
 						
         			</a>
 				
-					<a target="_blank" class="btn qq" href="https://wpa.qq.com/msgrd?v=3&uin=2646405301&site=qq&menu=yes">
+					<a target="_blank" class="btn qq" href="https://wpa.qq.com/msgrd?v=3&uin=768690360&site=qq&menu=yes">
 						
             		<i class="DearMsDanIconFont icon-qq"></i>
 						
@@ -360,11 +360,11 @@
           </li>
         
           <li>
-            <a href="/%20ssr%E5%90%8E%E5%8F%B0%E4%B8%80%E9%94%AE%E8%84%9A%E6%9C%AC.html">ssr后台一键脚本</a>
+            <a href="/%20ant%E5%90%8E%E7%AB%AF%E5%AF%B9%E6%8E%A5v2%E5%92%8Css.html">ant后端对接v2和ss</a>
           </li>
         
           <li>
-            <a href="/%20ant%E5%90%8E%E7%AB%AF%E5%AF%B9%E6%8E%A5v2%E5%92%8Css.html">ant后端对接v2和ss</a>
+            <a href="/%20ssr%E5%90%8E%E5%8F%B0%E4%B8%80%E9%94%AE%E8%84%9A%E6%9C%AC.html">ssr后台一键脚本</a>
           </li>
         
           <li>
@@ -650,8 +650,8 @@
 					<div >
 
 						<div>
-							<a href="/ ant后端对接v2和ss.html">
-								ant后端对接v2和ss</a>
+							<a href="/ ssr后台一键脚本.html">
+								ssr后台一键脚本</a>
 						</div>
 						<div class="dearmsdan-axis-img">
 							有东西被加密了, 请输入密码查看.
@@ -676,8 +676,8 @@
 					<div >
 
 						<div>
-							<a href="/ ssr后台一键脚本.html">
-								ssr后台一键脚本</a>
+							<a href="/ ant后端对接v2和ss.html">
+								ant后端对接v2和ss</a>
 						</div>
 						<div class="dearmsdan-axis-img">
 							有东西被加密了, 请输入密码查看.
@@ -1092,8 +1092,8 @@
 					<div >
 
 						<div>
-							<a href="/v2ray-poseidon 版使用.html">
-								v2ray-poseidon 版使用</a>
+							<a href="/使用 LNMP 部署 SSPanel.html">
+								CentOS 7 上使用 宝塔 搭建 SSPanel</a>
 						</div>
 						<div class="dearmsdan-axis-img">
 							有东西被加密了, 请输入密码查看.
@@ -1118,8 +1118,8 @@
 					<div >
 
 						<div>
-							<a href="/使用 LNMP 部署 SSPanel.html">
-								CentOS 7 上使用 宝塔 搭建 SSPanel</a>
+							<a href="/v2ray-poseidon 版使用.html">
+								v2ray-poseidon 版使用</a>
 						</div>
 						<div class="dearmsdan-axis-img">
 							有东西被加密了, 请输入密码查看.
@@ -1248,14 +1248,11 @@
 					<div >
 
 						<div>
-							<a href="/hexo文章加密.html">
-								hexo文章加密</a>
+							<a href="/SSPanel 后端 Docker 对接.html">
+								SSPanel 后端 Docker 对接</a>
 						</div>
 						<div class="dearmsdan-axis-img">
-							<p>安装</p>
-<blockquote>
-<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install --save hexo-blog-encrypt</span><br></pre></td></tr></table></figure>
-</blockquote>
+							有东西被加密了, 请输入密码查看.
 							
 						</div>
 
@@ -1277,11 +1274,14 @@
 					<div >
 
 						<div>
-							<a href="/SSPanel 后端 Docker 对接.html">
-								SSPanel 后端 Docker 对接</a>
+							<a href="/hexo文章加密.html">
+								hexo文章加密</a>
 						</div>
 						<div class="dearmsdan-axis-img">
-							有东西被加密了, 请输入密码查看.
+							<p>安装</p>
+<blockquote>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install --save hexo-blog-encrypt</span><br></pre></td></tr></table></figure>
+</blockquote>
 							
 						</div>
 
@@ -4075,22 +4075,6 @@ $(document).ready(function () {
 function linker(){
 /* 外链保护http://link.zhd99.cn */
 	 
-
-		$("article a").not(".toc a,article h1 a,article h2 a,article h3 a,article h4 a,article h5 a,article h6 a,article .gallerys,.ui-artZoom-buttons a").attr("href",
-																														function(){
-			// 不是本站链接检测  article
-			var str = this.href;
-			var pattern = /http.+zhd99.cn/;
-			var falg = pattern.test(str).toString().trim();
-
-			var pattern2 = /http.+dearmsdan/;
-			var falg2 = pattern2.test(str).toString().trim();
-			if('true' != falg && 'true' != falg2){
-				return 'http://link.dearmsdan.com/links.html' + '?target=' + str;
-			   }
-	});
-
-	
 }
 		
 	
